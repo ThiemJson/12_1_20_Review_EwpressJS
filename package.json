@@ -1,0 +1,23 @@
+{
+  "name": "12_1_20_review_expressjs",
+  "version": "1.0.0",
+  "description": "Đầu tiên là làm gì ý nhỉ, thôi ăn lol rồi, quên rồi. Haizzz. tạo một cái file server.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiemJson/12_1_20_Review_EwpressJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiemJson/12_1_20_Review_EwpressJS/issues"
+  },
+  "homepage": "https://github.com/ThiemJson/12_1_20_Review_EwpressJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
