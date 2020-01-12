@@ -31,3 +31,6 @@ Còn cái action và get post ở cái PATH của nó là nó đưa về một c
 
 # B10 
 Chung quy lại, cũng căng phết dấdyyyy
+
+# B11
+Tôi đang thử với cái thằng LowDB
