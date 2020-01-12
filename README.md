@@ -8,3 +8,11 @@ Tạo cái .gitignore, đứa cái thằng node_modules vào cho khi commit nó 
 # B4 
 Chạy thử cái server xem nó chạy như lào lào. 
 
+# B5 
+Tôi tạo một cái folder là views này, trong đó tôi lại tạo một cái là folder là Users, trong đó có một file PUG là user.
+
+# B6 APP.GET
+Tôi tại một cái app.get ở trong file server.js, cái này nó có 2 tham số, thực sự là có 3 tham số thì phải nhưng mà dùng 2 thôi cũng được, 
+Một cái app.get((cái này là một cái Endpoit này, nghĩa là người dùng nhập gì vào ở thanh URL thì cái này nó đónnnn, một cái là REQuest, một cái là RESPONSE))
+
+Cái request nó sẽ chứa những gì mà người nhận gửi lên, còn cái REsponse thì nó là cái mà Server trả về cho người dùng, CLIENT đó. 
