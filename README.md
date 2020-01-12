@@ -34,3 +34,6 @@ Chung quy lại, cũng căng phết dấdyyyy
 
 # B11
 Tôi đang thử với cái thằng LowDB
+
+# B12 
+Mình học được cách sử dụng cái lowdb, mình thấy cũng được, đọc file ghi file cũng khác là hay , cơ mà đây là thao tác với database, mình vẫn chưa hiểu rõ lắm những cái khác nó có ý nghĩa như thế nào, thôi thì mình chuyển sang master CSS học cái đó vậy :D 
