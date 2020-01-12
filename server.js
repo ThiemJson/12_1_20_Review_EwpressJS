@@ -36,7 +36,7 @@ app.listen(port,(req,res)=>{
 //app.get 
 app.get(`/`,(request,response)=>{
     response.render(`users/user.pug`,{
-        users:users
+        users:db.get("users").value()
     })
 })
 
@@ -55,7 +55,6 @@ app.get(`/users/create`,(request,response)=>{
 })
 
 app.post(`/users/create`,(request,response)=>{
-    console.log("Done");
-    users.push(request.body);
+    db.get('users').push(request.body).write()
     response.redirect("/");
 })
