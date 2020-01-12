@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+
+app.set('views', './views'); // Thư mục views nằm cùng cấp với file app.js
+app.set('view engine', 'pug'); // Sử dụng pug làm view engine
 // Một cái Database đơn giản
 users =[
     {id: 1, name: "CaoThiem"},
@@ -18,8 +21,8 @@ app.listen(port,(req,res)=>{
 
 
 //app.get 
-app.get(`/`,(request,response)=>{
-    response.render(`/views/users/user.pug`,{
+app.get(`/views/users`,(request,response)=>{
+    response.render(`users/user.pug`,{
         users:users
     })
 })

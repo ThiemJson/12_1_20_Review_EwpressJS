@@ -1,4 +1,9 @@
 h1 Users 
+form(action="users/user.pug", method="get")
+    label(for="input-users") Name
+    input#input-users(type="text", name="name")
+    button(type="submit") Submit
+
 ul.users-list
     each user in users
         li= user.name

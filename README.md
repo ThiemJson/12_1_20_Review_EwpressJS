@@ -16,3 +16,10 @@ Tôi tại một cái app.get ở trong file server.js, cái này nó có 2 tham
 Một cái app.get((cái này là một cái Endpoit này, nghĩa là người dùng nhập gì vào ở thanh URL thì cái này nó đónnnn, một cái là REQuest, một cái là RESPONSE))
 
 Cái request nó sẽ chứa những gì mà người nhận gửi lên, còn cái REsponse thì nó là cái mà Server trả về cho người dùng, CLIENT đó. 
+
+# B7
+Tôi đang chẳng hiểu tại sao không biết tôi sai ở đâu mà cái server này nó không chạy, clon má.
+Clone me, mãi tôi mới render ra được ,chẳng hiểu sao nó lại như vậy, đù má
+
+# B8
+Vừa rồi là nó hơi nhập nhằng ở cái path thôi, còn bây giờ tôi quên mất cách để gửi một cái GET lên server , rồi server lấy cái đó render ra theo như ý mình rồi . Hầy 
