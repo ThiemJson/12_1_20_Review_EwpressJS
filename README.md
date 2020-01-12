@@ -23,3 +23,11 @@ Clone me, mãi tôi mới render ra được ,chẳng hiểu sao nó lại như 
 
 # B8
 Vừa rồi là nó hơi nhập nhằng ở cái path thôi, còn bây giờ tôi quên mất cách để gửi một cái GET lên server , rồi server lấy cái đó render ra theo như ý mình rồi . Hầy 
+
+# B9 
+tôi ngồi gõ mãi mà quên gõ cái README, câu chuyện tôi ôn lại là được như thế này, render của thằng respone là nó sẽ trả ra một cái file PUG, hiểu một cách đơn giản là nó kiểu kiểu đơn giản là RENDER ra cái file HTMl. 
+
+Còn cái action và get post ở cái PATH của nó là nó đưa về một cái Endpoit nào đó thì phải, rồi mình sẽ xử lý cái endpoit đó với cái method phù hợp, method get chẳng hạn, hoặc method post chẳng hạn 
+
+# B10 
+Chung quy lại, cũng căng phết dấdyyyy

@@ -39,3 +39,13 @@ app.get(`/users/search`,(request,response)=>{
         users : matchedUsers
     })
 })
+
+app.get(`/users/create`,(request,response)=>{
+    response.render('users/createUser.pug');
+})
+
+app.post(`/users/create`,(request,response)=>{
+    console.log("Done");
+    users.push(request.body);
+    response.redirect("/");
+})
