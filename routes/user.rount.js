@@ -1,12 +1,9 @@
 var express = require('express');
 var router = express.Router();
 const db = require("../db")
+const controllers = require("../controllers/user.controllers")
 
-router.get(`/`,(request,response)=>{
-    response.render(`users/user.pug`,{
-        users:db.get("users").value()
-    })
-})
+router.get(`/`,controllers.server);
 router.get(`/search`,(request,response)=>{
     let name = request.query.name.toLowerCase();
     let matchedUsers = users.filter((user)=>{
@@ -21,7 +18,7 @@ router.get(`/create`,(request,response)=>{
 })
 router.post(`/create`,(request,response)=>{
     db.get('users').push(request.body).write()
-    response.redirect("/");
+    response.redirect("/users");
 })
 
 
