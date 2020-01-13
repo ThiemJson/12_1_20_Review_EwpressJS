@@ -37,3 +37,6 @@ Tôi đang thử với cái thằng LowDB
 
 # B12 
 Mình học được cách sử dụng cái lowdb, mình thấy cũng được, đọc file ghi file cũng khác là hay , cơ mà đây là thao tác với database, mình vẫn chưa hiểu rõ lắm những cái khác nó có ý nghĩa như thế nào, thôi thì mình chuyển sang master CSS học cái đó vậy :D 
+
+# B12
+Cảm giác của tôi sau khi học xong thằng Route, nó khá là hay, nó định tuyển cho cái Endpoit , khỏi cần phải nhập một đống thứ nhầy nhụa trong server.js, chỉ cần chia nó ra thành từng cái Route và nhét nó vào một cái Folder tên là Route thôi là được :D . 
