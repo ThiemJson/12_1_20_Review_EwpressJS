@@ -40,3 +40,6 @@ Mình học được cách sử dụng cái lowdb, mình thấy cũng được, 
 
 # B12
 Cảm giác của tôi sau khi học xong thằng Route, nó khá là hay, nó định tuyển cho cái Endpoit , khỏi cần phải nhập một đống thứ nhầy nhụa trong server.js, chỉ cần chia nó ra thành từng cái Route và nhét nó vào một cái Folder tên là Route thôi là được :D . 
+
+# b13 
+Sau một hồi tôi thêm cái Controller, hiểu một cách đơn giản là nó giúp t đưa toàn bộ code chạy ở routes sang một file khác, có lẽ là để dễ quản lý hơn, giờ tôi sẽ code lại toàn bộ cái trang này xem tôi học nhớ được đến đâu. :D 
