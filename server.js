@@ -1,16 +1,9 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const userRoute = require("./routes/user.rount.js");
 const bodyParser = require('body-parser');
-
-const low = require('lowdb');
-const FileSync = require('lowdb/adapters/FileSync');
-
-const adapter = new FileSync('db.json');
-const db = low(adapter);
-
-db.defaults({ users: []})
-  .write()
+const db = require("./db")
 
 app.set('views', './views'); // Thư mục views nằm cùng cấp với file app.js
 app.set('view engine', 'pug'); // Sử dụng pug làm view engine
@@ -31,30 +24,7 @@ app.listen(port,(req,res)=>{
     console.log(`Server listen on port ` + port);
 });
 
+app.use('/users',userRoute);
 
 
 //app.get 
-app.get(`/`,(request,response)=>{
-    response.render(`users/user.pug`,{
-        users:db.get("users").value()
-    })
-})
-
-app.get(`/users/search`,(request,response)=>{
-    let name = request.query.name.toLowerCase();
-    let matchedUsers = users.filter((user)=>{
-        return user.name.toLowerCase().indexOf(name) !== -1;
-    })
-    response.render(`users/user.pug`,{
-        users : matchedUsers
-    })
-})
-
-app.get(`/users/create`,(request,response)=>{
-    response.render('users/createUser.pug');
-})
-
-app.post(`/users/create`,(request,response)=>{
-    db.get('users').push(request.body).write()
-    response.redirect("/");
-})
