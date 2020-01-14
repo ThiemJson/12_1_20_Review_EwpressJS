@@ -43,3 +43,12 @@ Cảm giác của tôi sau khi học xong thằng Route, nó khá là hay, nó �
 
 # b13 
 Sau một hồi tôi thêm cái Controller, hiểu một cách đơn giản là nó giúp t đưa toàn bộ code chạy ở routes sang một file khác, có lẽ là để dễ quản lý hơn, giờ tôi sẽ code lại toàn bộ cái trang này xem tôi học nhớ được đến đâu. :D 
+
+# B14
+t vừa học cái Validator , nó cũng khoai khoai lắm, cũng khá là bình thường, nhưng mà mình chưa học cái Bootsrap nên là làm quen nó cũng hơi khó khó :V 
+
+Cái vali này cũng không khoai , cơ mà hôm nay mình bị nhầm một chút giữa cái request.body và request.query, hầy :D 
+
+# B15
+Mihf vừa biết thêm một cái gọi là Middleware, hóa ra là mình dung nó cũng nhiều rồi nhưng mà mình không biết, nó dùng cũng được 
+Nghĩa là nếu dùng 2 cái middle cùng một lúc, thì phải có một cái xong rồi thì mới đến lượt cái kia nào, nó làm mình cảm thấy giống giống callback nhỉ 
