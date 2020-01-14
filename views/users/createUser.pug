@@ -1,5 +1,9 @@
-h1 Users 
-form(action="/users/create", method="post")
-    label(for="input-users") Name
-    input#input-users(type="text", name="name")
-    button(type="submit") Create
+extends ../layouts/common.pug
+
+block content
+
+    h1 Users 
+    form(action="/users/create", method="post")
+        label(for="input-users") Name
+        input#input-users(type="text", name="name")
+        button(type="submit") Create

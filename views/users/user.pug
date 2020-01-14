@@ -1,10 +1,13 @@
-h1 Users 
-a(href="users/create") Create Users
-form(action="/users/search", method="get")
-    label(for="input-users") Name
-    input#input-users(type="text", name="name")
-    button(type="submit") Submit
+extends ../layouts/common.pug
 
-ul.users-list
-    each user in users
-        li= user.name
+block content
+    h1 Users 
+    a(href="users/create") Create Users
+    form(action="/users/search", method="get")
+        label(for="input-users") Name
+        input#input-users(type="text", name="name")
+        button(type="submit") Submit
+
+    ul.users-list
+        each user in users
+            li= user.name
