@@ -19,6 +19,16 @@ module.exports.create = (request,response)=>{
 }
 
 module.exports.createPost = (request,response)=>{
-    db.get('users').push(request.body).write()
+    let err = [];
+    if(!request.body.name){
+        err.push("Name is required ! ")
+    }
+    if(err.length){
+        response.render('users/createUser.pug',{
+            err: err
+        });
+        return;
+    }
+    db.get('users').push(request.body).write();
     response.redirect("/users");
 }

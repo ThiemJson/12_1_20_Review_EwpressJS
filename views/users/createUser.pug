@@ -1,8 +1,9 @@
 extends ../layouts/common.pug
 
 block content
-
     h1 Users 
+    if err
+        .alert.alert-danger= err
     form(action="/users/create", method="post")
         label(for="input-users") Name
         input#input-users(type="text", name="name")

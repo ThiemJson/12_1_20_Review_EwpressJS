@@ -8,8 +8,9 @@ const db = require("./db")
 app.set('views', './views'); // Thư mục views nằm cùng cấp với file app.js
 app.set('view engine', 'pug'); // Sử dụng pug làm view engine
 
-app.use(bodyParser.json()) // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(express.static('public'));
 // // Một cái Database đơn giản
 // users =[
 //     {id: 1, name: "CaoThiem"},
