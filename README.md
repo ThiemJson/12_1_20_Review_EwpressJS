@@ -71,3 +71,6 @@ Nhưng mà có một bài toán xảy ra là ,nếu tôi thay đổi cookie bở
 
 # B19 
 Và thế là có một cái gọi là Signed Cookie ra đời, và tôi đang đọc nó  :D 
+Tôi thấy nó khá là hay, nhưng mà mình cần dùng cái SignedCookie cho nó :D . :v 
+Nó giúp mình bảo vệ Cookie, không thay đổi coole được :D 
+Đơn giản, chỉ cần trong chỗ set Cookie, mình cho cái tham số thứ 3,  Signed là true là xong :V . nó tự động ấy cho mình :v 
