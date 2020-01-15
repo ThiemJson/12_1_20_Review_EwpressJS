@@ -28,6 +28,6 @@ module.exports.postLogin = (req,res)=>{
         return;
     };
     res.cookie('userID',user.id);
-    console.log(user);
+
     res.redirect('/users');
 }
