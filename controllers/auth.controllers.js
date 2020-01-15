@@ -8,7 +8,6 @@ module.exports.login = (request,response)=>{
 
 module.exports.postLogin = (req,res)=>{
     let email = req.body.email;
-    console.log(req.body);
     //let password = parseInt(req.body.password);
     let password = req.body.password;
     let user = db.get('users').find({email: email}).value();
@@ -28,5 +27,7 @@ module.exports.postLogin = (req,res)=>{
         });
         return;
     };
+    res.cookie('userID',user.id);
+    console.log(user);
     res.redirect('/users');
 }

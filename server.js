@@ -4,6 +4,7 @@ const port = 3000;
 const userRoute = require("./routes/user.routes.js");
 const userLogin = require("./routes/auth.routes.js")
 const bodyParser = require('body-parser');
+const authMiddleware = require('./middleware/auth.middleware');
 const db = require("./db");
 
 
@@ -13,6 +14,8 @@ app.set('view engine', 'pug'); // Sử dụng pug làm view engine
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(express.static('public'));
+const cookieParser = require('cookie-parser');
+app.use(cookieParser()) // use to read format cookie
 // // Một cái Database đơn giản
 // users =[
 //     {id: 1, name: "CaoThiem"},
@@ -27,7 +30,7 @@ app.listen(port,(req,res)=>{
     console.log(`Server listen on port ` + port);
 });
 
-app.use('/users',userRoute);
+app.use('/users',authMiddleware.requireAuth, userRoute);
 app.use('/auth',userLogin);
 
 //app.get 

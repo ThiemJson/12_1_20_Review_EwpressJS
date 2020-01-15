@@ -4,6 +4,12 @@
       "name": "NguyenCaoThiem",
       "email": "thiem",
       "password": 123456789
+    },
+    {
+      "name": "Toi la thiem va toi yeu Chau",
+      "email": "thiem2",
+      "password": 12345,
+      "id": "yEhI-oBa"
     }
   ]
 }

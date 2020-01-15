@@ -52,3 +52,10 @@ Cái vali này cũng không khoai , cơ mà hôm nay mình bị nhầm một ch�
 # B15
 Mihf vừa biết thêm một cái gọi là Middleware, hóa ra là mình dung nó cũng nhiều rồi nhưng mà mình không biết, nó dùng cũng được 
 Nghĩa là nếu dùng 2 cái middle cùng một lúc, thì phải có một cái xong rồi thì mới đến lượt cái kia nào, nó làm mình cảm thấy giống giống callback nhỉ 
+
+
+# B16
+Cái middleware đó nó không hẳn giống callback, nó kiểu như là một cái tác vụ ở giữa, qua thằng này mới đến thằng kia 
+Vừa rồi thì tôi cũng tự tạo được một cái trang Login căn bản , không hẳn là lưu pass là dung cookie đâu, cookie đó là một cái gì đó , mà serve sẽ trả về cho người dùng, và khi người dung gửi Req lên server đó thì sẽ gửi kèm cả cookie luôn, và theo như mình biết thì cách này không dùng, chit đề demo cách sử dụng của Cookie thôi, :D . 
+Trong bản Demo này thì Server sẽ kiểm tra trong Request có cái Cooikie này không, cái cookie này mang ID của người dùng, 
+Và mình hoàn toàn có thể tạo một cái nút gọi là Logout chẳng hạn, xóa Cookie đó đi :D .

@@ -1,4 +1,5 @@
-const db = require("../db")
+const db = require("../db");
+const shortid = require('shortid');
 
 module.exports.server = (request,response)=>{
     response.render(`users/user.pug`,{
@@ -19,6 +20,7 @@ module.exports.create = (request,response)=>{
 }
 
 module.exports.createPost = (request,response)=>{
+    request.body.id = shortid.generate();
     db.get('users').push(request.body).write();
     response.redirect("/users");
 }
