@@ -1,3 +1,9 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "NguyenCaoThiem",
+      "email": "thiem",
+      "password": 123456789
+    }
+  ]
 }

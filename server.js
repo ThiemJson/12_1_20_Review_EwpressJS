@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const userRoute = require("./routes/user.rount.js");
+const userRoute = require("./routes/user.routes.js");
+const userLogin = require("./routes/auth.routes.js")
 const bodyParser = require('body-parser');
-const db = require("./db")
+const db = require("./db");
+
 
 app.set('views', './views'); // Thư mục views nằm cùng cấp với file app.js
 app.set('view engine', 'pug'); // Sử dụng pug làm view engine
@@ -26,6 +28,6 @@ app.listen(port,(req,res)=>{
 });
 
 app.use('/users',userRoute);
-
+app.use('/auth',userLogin);
 
 //app.get 
