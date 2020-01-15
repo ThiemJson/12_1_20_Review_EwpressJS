@@ -1,5 +1,6 @@
 const db = require("../db");
 const shortid = require('shortid');
+const md5 = require("md5");
 
 module.exports.server = (request,response)=>{
     response.render(`users/user.pug`,{
@@ -21,6 +22,18 @@ module.exports.create = (request,response)=>{
 
 module.exports.createPost = (request,response)=>{
     request.body.id = shortid.generate();
+    let userName = request.body.name; 
+    let userEmail = request.body.email;
+    let userPass = request.body.password;
+    if((!userEmail) || !userPass || !userName ){
+        response.render('users/createUser.pug',{
+            err: [
+                "Something what wrong, try again pls"
+            ]
+        });
+        return;
+    }
+    request.body.password = md5(request.body.password);
     db.get('users').push(request.body).write();
     response.redirect("/users");
 }

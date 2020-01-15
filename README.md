@@ -59,3 +59,15 @@ Cái middleware đó nó không hẳn giống callback, nó kiểu như là mộ
 Vừa rồi thì tôi cũng tự tạo được một cái trang Login căn bản , không hẳn là lưu pass là dung cookie đâu, cookie đó là một cái gì đó , mà serve sẽ trả về cho người dùng, và khi người dung gửi Req lên server đó thì sẽ gửi kèm cả cookie luôn, và theo như mình biết thì cách này không dùng, chit đề demo cách sử dụng của Cookie thôi, :D . 
 Trong bản Demo này thì Server sẽ kiểm tra trong Request có cái Cooikie này không, cái cookie này mang ID của người dùng, 
 Và mình hoàn toàn có thể tạo một cái nút gọi là Logout chẳng hạn, xóa Cookie đó đi :D .
+
+# B17 
+sorry, tôi quên béng mất là cần viết README, à vừa rồi tôi làm được một cái đăng nhập rồi này. Và tôi vừa làm cái mã Md5 này.
+Ơ tôi tưởng là tôi chưa gõ cái md5 vào đây hả. 
+
+# b18 Md5
+Tôi dùng cái Md5 cho mật khẩu của mình, và rồi thì tôi đang đọc đến phần làm một cái hiện ra ai là người vừa đăng nhập vào, nó kieur như alf hiện tên ý. 
+Nhưng mà có một bài toán xảy ra là ,nếu tôi thay đổi cookie bởi một ID của người dùng khác thì tôi hoàn toàn có thể Login vào tài khoản khác mà không cần pass cũng chẳng cần email :D :D :D  
+
+
+# B19 
+Và thế là có một cái gọi là Signed Cookie ra đời, và tôi đang đọc nó  :D 

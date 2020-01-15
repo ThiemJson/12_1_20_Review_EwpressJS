@@ -1,14 +1,15 @@
 const db = require("../db");
 
 module.exports.requireAuth = (req,res,next)=>{
-    console.log(req.cookies);
+    let user = db.get('users').find({id: req.cookies.userID}).value();
     if(!(req.cookies.userID)){
         res.redirect('/auth/login');
         return;
     }
-    if(!(db.get('users').find({id: req.cookies.userID}).value())){
+    if(!user){
         res.redirect('/auth/login');
         return;
     }
+    res.locals.user = user;
     next();
 }

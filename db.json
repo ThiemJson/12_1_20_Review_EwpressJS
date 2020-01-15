@@ -8,8 +8,20 @@
     {
       "name": "Toi la thiem va toi yeu Chau",
       "email": "thiem2",
-      "password": 12345,
+      "password": "25f9e794323b453885f5181f1b624d0b",
       "id": "yEhI-oBa"
+    },
+    {
+      "name": "thiem10",
+      "email": "thiem10",
+      "password": "25f9e794323b453885f5181f1b624d0b",
+      "id": "XJtVxNlN"
+    },
+    {
+      "name": "Nguyễn Ngọc Minh Chou",
+      "email": "thiemtinhte",
+      "password": "c89b3002bf0491f6ddc8613279561747",
+      "id": "WpJl86s6"
     }
   ]
 }
