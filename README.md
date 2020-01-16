@@ -91,3 +91,12 @@ Gọi là Add to Cart đấy :D xem thử xem sao :D
 Hoặc là trang đọc sách, thêm sách xem như thế nào :D 
 
 à có một mẹo nhỏ là nhét chúng nó vào Container là được :v .nhìn nó vào giữa gọn hẳn :v 
+
+# B22 ,
+Đang đọc xong cái CRFS , mặc dù trước đó là cho cái file lên, ngồi mân mê cũng lâu lắm, chi hiện cái file Avatar ý. 
+
+# B23 Sessison 
+Cái này khó phết,tạo cho người dùng để có thể AddTOCard mà không cần đăng nhập mới được ý, 
+mình chưa làm được
+khoai và lằng nhằng phết
+THôi commit nào
