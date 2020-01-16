@@ -28,7 +28,7 @@ module.exports.createPost = (request,response)=>{
     if((!userEmail) || !userPass || !userName ){
         response.render('users/createUser.pug',{
             err: [
-                "Something what wrong, try again pls"
+                "Something was wrong, try again pls"
             ]
         });
         return;

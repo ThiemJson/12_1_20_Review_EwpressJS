@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -15,7 +16,7 @@ app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(express.static('public'));
 const cookieParser = require('cookie-parser');
-app.use(cookieParser('secret')) // use to read format cookie
+app.use(cookieParser(process.env.SESSION_SECRET)) // use to read format cookie
 // // Một cái Database đơn giản
 // users =[
 //     {id: 1, name: "CaoThiem"},

@@ -74,3 +74,8 @@ Và thế là có một cái gọi là Signed Cookie ra đời, và tôi đang �
 Tôi thấy nó khá là hay, nhưng mà mình cần dùng cái SignedCookie cho nó :D . :v 
 Nó giúp mình bảo vệ Cookie, không thay đổi coole được :D 
 Đơn giản, chỉ cần trong chỗ set Cookie, mình cho cái tham số thứ 3,  Signed là true là xong :V . nó tự động ấy cho mình :v 
+
+# B20 
+Vừa rồi tôi học cái Biến môi trường, cái biến này có tác dụng khá là hay, nó đặt trong file .env , mình không commit các cái file này lên vì vậy nó bảo mật, trong đó mình lưu những thứ quan trọng như là cookie secret, link đến DB này, :D , hoặc đơn giản chỉ là cái PORT mà mình dùng để chạy server này, nói chung là cũng tương đối đễ hiểu :D 
+
+Vl, đã 10h rồi, phải về nấu cơm rồi, vừa nãy nhìn có mỗi 9h38, mà ngước mắt lên đã là 10h rồi, hầyyyyy
