@@ -79,3 +79,15 @@ Nó giúp mình bảo vệ Cookie, không thay đổi coole được :D
 Vừa rồi tôi học cái Biến môi trường, cái biến này có tác dụng khá là hay, nó đặt trong file .env , mình không commit các cái file này lên vì vậy nó bảo mật, trong đó mình lưu những thứ quan trọng như là cookie secret, link đến DB này, :D , hoặc đơn giản chỉ là cái PORT mà mình dùng để chạy server này, nói chung là cũng tương đối đễ hiểu :D 
 
 Vl, đã 10h rồi, phải về nấu cơm rồi, vừa nãy nhìn có mỗi 9h38, mà ngước mắt lên đã là 10h rồi, hầyyyyy
+
+# B 21
+Tôi học được cái Debugging trên Browser khá là hay, nhưng mà phải dùng cái --inspect trong cái chỗ pakage.json cơ. ;D . mà thôi không hay dùng nhiều lắm 
+# B22 
+Tôi vừa học được cái tạo một cái Card, nó khó vãi lol, ngồi mâm mê cả buổi chiều cơ, haafyyyy. 
+Giờ thì mới bổ sung được một cái upload avatar, khá là hay, lắm các thứ các thứ vào là ra một đống cái khá à được :V . haha. 
+à tôi chưa làm được cái Phân trang, 
+Bao giờ học xong cái này và một cái Master CSS, tôi cần làm một cái cửa hàng đơn giản, :D :D :Đ :D :D :D 
+Gọi là Add to Cart đấy :D xem thử xem sao :D 
+Hoặc là trang đọc sách, thêm sách xem như thế nào :D 
+
+à có một mẹo nhỏ là nhét chúng nó vào Container là được :v .nhìn nó vào giữa gọn hẳn :v 

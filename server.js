@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const userRoute = require("./routes/user.routes.js");
-const userLogin = require("./routes/auth.routes.js")
+const userLogin = require("./routes/auth.routes.js");
+const shopCart = require("./routes/cart.routes");
 const bodyParser = require('body-parser');
 const authMiddleware = require('./middleware/auth.middleware');
 const db = require("./db");
@@ -33,5 +34,5 @@ app.listen(port,(req,res)=>{
 
 app.use('/users',authMiddleware.requireAuth, userRoute);
 app.use('/auth',userLogin);
-
+app.use('/shop',authMiddleware.requireAuth,shopCart);
 //app.get 

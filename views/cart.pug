@@ -1,0 +1,26 @@
+extends ./layouts/common.pug
+
+block content
+    .container
+        .row
+            each product in products 
+                .card.text-center(style='width: 13rem; margin: 2rem')
+                    img.card-img-top(src= product.image, alt='Card image cap')
+                    .card-body
+                        h5.card-title= product.name
+                        p.card-text= product.description
+                        a.btn.btn-primary(href='#') Add to cart
+    nav(aria-label='...')
+        ul.pagination
+            li.page-item.disabled
+                span.page-link Previous
+            li.page-item
+                a.page-link(href='#') 1
+            li.page-item.active
+                span.page-link
+                    | 2
+                    span.sr-only (current)
+            li.page-item
+                a.page-link(href='#') 3
+            li.page-item
+                a.page-link(href='#') Next
