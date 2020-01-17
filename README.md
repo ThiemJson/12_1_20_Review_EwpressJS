@@ -100,3 +100,16 @@ Cái này khó phết,tạo cho người dùng để có thể AddTOCard mà kh�
 mình chưa làm được
 khoai và lằng nhằng phết
 THôi commit nào
+
+Mình vừa làm xong cái AddToCart rồi 
+Bây giờ mình sẽ thuật lại những cái gì mà mình đã dung dể làm: 
+- Tạo cái endpoit  trong mỗi cái endpoit trong Button của sản phẩm
+- Tạo cái controllers, cái rout mới cho việc nhận cái endpoit đó, 
+- Tất nhiên là phải tạo xong cái SessionsID rồi, và nhớ phải để tất cả những cái nào có sử dụng Cookie phải dưới cái Cookir Parsse, không thì nó sẽ ra undedied;
+- Làm xong cái Seession ID rồi thì mình cần lưu nó vào trong Data base với collection là sessions. 
+- trong mỗi cái document của Collect ấy sẽ là cái SessionID con, trong đó sẽ chứa ID ( là cái ID mà mình mà server đã cấp phát), một cái field nữa là chứa Cart, nghĩa là những cái product mà mình đã chọn.
+- Mỗi lần ấn chọn xong thì nó sẽ render lại trang Product, điều này hơi lởm nếu dùng trong thực tế
+ - Và đó là những gì mà mình đã dùng để làm xong, nếu mà làm lại thì chắc là mình cũng sẽ làm được thôi. 
+ à mà phải cẩn thận xử lý những cái endpoit nhé, 
+
+- Commit lên Github nào :D :D :D :D :D :D :D 

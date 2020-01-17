@@ -11,3 +11,15 @@ module.exports.showCart = (req,res)=>{
         products: allCart
     });
 }
+
+module.exports.addToCart = (req,res)=>{
+    let sessionID = req.signedCookies.sessionID;
+    let productID = req.params.productID;
+    let count = db.get("sessions").find({id: sessionID}).get("cart."+productID, 0).value();
+
+    db.get("sessions")
+      .find({id: sessionID})
+      .set('cart.'+productID,count+1)
+      .write();
+    res.redirect("/shop");
+}

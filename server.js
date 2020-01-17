@@ -7,8 +7,7 @@ const userLogin = require("./routes/auth.routes.js");
 const shopCart = require("./routes/cart.routes");
 const bodyParser = require('body-parser');
 const authMiddleware = require('./middleware/auth.middleware');
-const db = require("./db");
-
+const sessionID = require("./middleware/session.middleware");
 
 app.set('views', './views'); // Thư mục views nằm cùng cấp với file app.js
 app.set('view engine', 'pug'); // Sử dụng pug làm view engine
@@ -31,8 +30,8 @@ app.use(cookieParser(process.env.SESSION_SECRET)) // use to read format cookie
 app.listen(port,(req,res)=>{
     console.log(`Server listen on port ` + port);
 });
-
+app.use(sessionID);
 app.use('/users',authMiddleware.requireAuth, userRoute);
 app.use('/auth',userLogin);
-app.use('/shop',authMiddleware.requireAuth,shopCart);
+app.use('/shop',shopCart);
 //app.get 

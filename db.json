@@ -734,5 +734,32 @@
       "image": "https://loremflickr.com/320/240",
       "description": "lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet"
     }
+  ],
+  "sessions": [
+    {
+      "id": "k1EKXI17"
+    },
+    {
+      "id": "K8pMoDi3"
+    },
+    {
+      "id": "tPNp3Kj5",
+      "cart": {
+        "08a383ed-b73e-4445-b1cb-9fcb2063559b": 1,
+        "45ff8094-471d-45e9-b5d1-3a2ee062dc3c": 1,
+        "0f55db86-ed63-4dad-a480-b239dc86b54d": 1
+      }
+    },
+    {
+      "id": "cMw0zJSF",
+      "cart": {
+        "45ff8094-471d-45e9-b5d1-3a2ee062dc3c": 3,
+        "08a383ed-b73e-4445-b1cb-9fcb2063559b": 6,
+        "cd3f201d-5b6a-45cd-aa9a-d07eecf17fd8": 1
+      }
+    },
+    {
+      "id": "BqDnST3f"
+    }
   ]
 }
